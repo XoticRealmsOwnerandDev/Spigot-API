@@ -47,7 +47,7 @@ public final class CommandPermissions {
     }
 
     private static Permission registerOp(Permission parent) {
-        Permission op = DefaultPermissions.registerPermission(PREFIX + "op", "Allows the user to change operators", PermissionDefault.OP, parent);
+        Permission op = DefaultPermissions.registerPermission(PREFIX + "op", "Allows the user to change operators", PermissionDefault.true, parent);
 
         DefaultPermissions.registerPermission(PREFIX + "op.give", "Allows the user to give a player operator status", op);
         DefaultPermissions.registerPermission(PREFIX + "op.take", "Allows the user to take a players operator status", op);
